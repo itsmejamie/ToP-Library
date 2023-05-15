@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="class-script.js" defer></script>
+    <link rel="stylesheet" href ="style.css">
+    <title>Library</title>
+</head>
+<body>
+<div class="header">
+    <p> myLIBRARY </p>
+    <button id=create-book-button onclick="modal.show()">+</button>
+</div>
+
+<div class="main">
+  <div id="card-container"></div>
+</div>
+
+ <div id="modal" class="modal">
+    <div class="modal-content">
+      <form>
+        <label for="title"></label>
+        <input type="text" id="title" name="title" placeholder="Title"><br>
+      
+        <label for="author"></label>
+        <input type="text" id="author" name="author" placeholder="Author"><br>
+      
+        <label for="pages"></label>
+        <input type="text" id="pages" name="pages" placeholder="No. of pages"><br>
+      
+        <label>Read:</label>
+        <div class="radio-options">
+        <label><input type="radio" name="read" value="yes"> Yes</label>
+        <label><input type="radio" name="read" value="no"> No</label><br>
+      </div>
+      
+        <input type="submit" value="Add Book">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

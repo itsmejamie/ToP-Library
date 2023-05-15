@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background: rgb(180,34,195);
+    background: linear-gradient(131deg, rgba(180,34,195,1) 0%, rgba(253,187,45,1) 100%);
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.header p {
+    font-size: 2rem;
+    margin-left: 20px;
+    color: #f0ece2;
+}
+
+.header button {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    margin-right: 50px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.20);
+}
+
+.book-container {
+    background-color: #f0ece2;
+}
+
+/* The Modal */
+.modal {
+    /* Set the position of the modal */
+    position: fixed;
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Set a background color with opacity */
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    /* Set the background color of the modal content */
+    background-color: #fefefe;
+    /* Set the position of the modal content */
+    margin: auto;
+    margin-top: 10vh;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 5px;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    margin: 0 0 10px; /* top right bottom left */
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+    
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="submit"]:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .radio-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .radio-options label {
+    margin-right: 10px;
+  }
+  
+
+
+
+
+
+
+
+
+/* Library Table */
+
+.library-table {
+    opacity: 0.1;
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  #card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+
+
+  .card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    }
+
+.card p, .card h2  {
+    display: flex;
+    justify-content: center;
+}
